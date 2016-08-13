@@ -1,0 +1,4 @@
+# ID_CDROM_MEDIA_BD = Bluray
+# ID_CDROM_MEDIA_DVD = DVD
+# ID_CDROM_MEDIA_CD = CD
+ACTION=="change", KERNEL=="sr[0-9]*", SUBSYSTEM=="block", SUBSYSTEMS=="usb", ATTRS{idVendor}=="0e8d", ATTRS{idProduct}=="1836", ENV{ID_CDROM}=="?*", SYMLINK+="cdrom", RUN+="/usr/local/bin/rip_media.sh"

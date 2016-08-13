@@ -1,3 +1,1 @@
-# audio-auto-rip-script
-
-test
+# auto-rip-script
